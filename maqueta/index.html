@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FPC</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <script>
+    var csvdata;
+    d3.dsv(";", "../data/pets-citizens.csv").then(
+    function(csvtemp){ csvdata = csvtemp; console.log(csvdata); }
+    );
+    </script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .upbar {
+            color: rgb(255, 179, 255);
+            background: rgb(255, 179, 255, 0);
+            font: 30px Arial Narrow, Bold;
+            display: flex;
+        }
+        .buttons{
+            display: flex;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<nav class="upbar">
+    <h1>FPC</h1>
+    <span>
+                <h6 class="buttons">pepe</h6>
+            </span>
+</nav>
+<label class="all"></label>
+</body>
+</html>
